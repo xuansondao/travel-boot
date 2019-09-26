@@ -1,8 +1,11 @@
 package travel.model.request;
 
+import travel.validation.NOTBLANK;
+
 import java.util.List;
 
 public class UserRequest {
+    @NOTBLANK
     private String userName;
     private String password;
     private String fullName;
